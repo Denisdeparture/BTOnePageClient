@@ -1,0 +1,49 @@
+@use './_variable.scss' as *;
+@mixin buttonStyle(){
+    position: relative;
+    cursor: pointer;
+    background-color: #FF4343;
+    border: solid;
+    border-color: #FF4343;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: $font_raleway;
+    & a{
+        color: white;
+    }
+    transition: .2s;
+    &:hover{
+        background-color: #E71414;
+        border-color: #E71414;
+        transform: translate(0px, -10px);
+    }
+    &:active{
+        box-shadow: 4px 4px 30px 2px #FF4343;
+    }
+}
+@mixin NavigationStyle(){
+    & a{
+        font-family: $font_raleway;
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: white;
+    }
+    padding: 20px 28px;
+    &:hover{
+        border: solid;
+        border-color: #BABBC5;
+        border-top: 0px;
+        border-left: 0px;
+        border-right:0px;
+    }
+    &:active{
+        border: solid;
+        color: #E71414;
+        border-color: #E71414;
+        border-top: 0px;
+        border-left: 0px;
+        border-right:0px;
+    }
+}

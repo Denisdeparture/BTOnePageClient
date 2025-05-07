@@ -1,0 +1,92 @@
+@use './global/_variable.scss' as *;
+.showcase{
+    background-image: url("../img/fon-city.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.showcase:before{
+  background-color: $base-fone-color;
+  content: '';
+  display: inline;
+  height: 25em;
+  width: 100%;
+  position: absolute;
+  opacity: 70%;
+}
+.showcase-container__left{
+    position: relative;
+    z-index: 3;
+}
+.showcase-container__left__title{
+    overflow-wrap: break-word;
+    max-width: 36%;
+    text-align: center;
+    line-height: 3em;
+    margin-bottom: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.showcase-container__left__title h1{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: $base-font;
+    font-weight: bold;
+}
+
+.showcase-container__left__text-name p{
+    color: $base-color;
+    font-size: 26px;
+    max-width: 30%;
+    font-weight: bold;
+    font-family: $base-font;
+}
+.showcase-container__left__text-name{
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showcase-container__left__links-list{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.showcase-container__left__links-list-item{
+    margin: 10px;
+    color: white;
+    font-family: $base-font;
+    font-size: 38px;
+
+    text-align: right;
+    transition-duration: 1s;
+    transition-property: all;
+}
+.showcase-container__left__links-list-item:hover{
+    margin-right: 3em;
+    color: gray;
+}
+.showcase-container__left__links-list:last-child{
+    margin:0px;
+}
+@media (max-width: 710px) {
+    .showcase:before{
+        background-color: $base-fone-color;
+        content: '';
+        display: inline;
+        height: 28em;
+        width: 100%;
+        position: absolute;
+        opacity: 70%;
+      }
+}

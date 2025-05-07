@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сделки с недвижимостью</title>
+    <link rel="stylesheet" href="~/scss/index.scss">
+    <script type="module" src="~/js/index.js"></script>
+    <script defer src="~/js/botscript.js"></script>
+</head>
+<body>
+    <button class="chatbot-toggler">
+        <i class="fa-regular fa-message"></i>
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <section class="showcase">
+        <div class="container img-city">
+            <div class="showcase-container__left">
+                <div class="showcase-container__left__title">
+                    <h1>Эксперт по Недвижимости</h1>
+                </div>
+                <div class="showcase-container__left__text-name">
+                    <p>Розыева Мария Владимировна</p>
+                </div>
+                <ul class="showcase-container__left__links-list">
+                    <li class="showcase-container__left__links-list-item"><p>Покупка</p></li>
+                    <li class="showcase-container__left__links-list-item"><p>Продажа</p></li>
+                    <li class="showcase-container__left__links-list-item"><p>Новосторойка</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="services-container">
+                <div class="services-container__title">
+                    <h2>Услуги</h2>
+                </div>
+                <ul class="services-container__list">
+                    <li class="services-container__list__item"><i class="fa-solid fa-check"></i><p>Сделка под ключ</p></li>
+                    <li class="services-container__list__item"><i class="fa-solid fa-check"></i><p>Фото/Реклама/Документы</p></li>
+                    <li class="services-container__list__item"><i class="fa-solid fa-check"></i><p>Проверки ФИЗ./ЮР./лиц </p></li>
+                    <li class="services-container__list__item"><i class="fa-solid fa-check"></i><p>Проверка объекта</p></li>
+                    <li class="services-container__list__item"><i class="fa-solid fa-check"></i><p>Разработка плана продажи/покупки </p></li>
+                    <li class="services-container__list__item"><i class="fa-solid fa-check"></i><p>Ипотека/Разбор кредитной истории</p></li>
+                    <li class="services-container__list__item"><i class="fa-solid fa-check"></i><p>Налоги оптимизация</p></li>
+                </ul>
+            </div>
+            <div class="chatbot">
+
+                <div class="chatbot__title"><h2>Задай вопрос</h2></div>
+                <ul class="chatbot__dialog-phrase-list">
+                    <li class="chat chatbot__dialog-phrase-list-item-incoming">
+                        <img src="https://avatars.dzeninfra.ru/get-zen-logos/271828/pub_665e000431e4ee216f571772_665fff0c5a628035b5b3b10d/orig" alt="X" height="44" width="44">
+                        <p><br>Здравствуйте, чем я могу вам помочь?</p>
+                    </li>
+
+                </ul>
+                <div class="chatbot__chatinput">
+                    <textarea placeholder="Введите сообщение..." required></textarea>
+                    <i class="fa-solid fa-arrow-right snd-bn"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="general-footer">
+        <div class="container">
+            <div class="general-footer__container__title">
+                <h2>Контакты:</h2>
+            </div>
+            <div class="general-footer__container__left">
+                <div class="general-footer__container__left__email"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=masysavina@gmail.com">email: masysavina@gmail.com</a></div>
+                <div class="general-footer__container__left__link"><a href="https://t.me/nedvigkavsem">https://t.me/nedvigkavsem</a></div>
+            </div>
+            <div class="general-footer__container__right">
+                <a href="https://wa.me/79774960775" class="general-footer__container__right-button"><p>+7 977 496 07 75</p></a>
+            </div>
+        </div>
+    </footer>
+</body>

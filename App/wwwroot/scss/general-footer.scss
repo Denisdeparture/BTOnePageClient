@@ -1,0 +1,86 @@
+@use './global/_variable.scss' as *;
+.general-footer{
+    background-color: $base-fone-color;
+    padding-top: 10px;
+    padding-bottom: 130px;
+}
+.general-footer__container__title h2 {
+    color: white;
+    font-family: $base-font;
+    font-weight: 300;
+    border-bottom: solid;
+    border-color: $base-color;
+    border-width: 4px;
+}
+.general-footer__container__title {
+    margin-bottom: 20px;
+    width: 100px;
+}
+.general-footer__container__left{
+    display: flex;
+    flex-direction: column;
+}
+.general-footer__container__left__email a {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: $base-font;
+}
+
+.general-footer__container__left__email a:active{
+    color:whitesmoke;
+}
+.general-footer__container__left__link a {
+    color: white;
+    transition-duration: 2s;
+    font-size: 18px;
+    font-family: $base-font;
+}
+
+.general-footer__container__left__link a:hover{
+    color: black;
+}
+.general-footer__container__right{
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+.general-footer__container__right-button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: black;
+    padding-right: 20px;
+    background-color: $base-color;
+    bottom: 40px;
+    position: relative;
+    border: none;
+}
+.general-footer__container__right-button:active{
+    background-color: rgb(114, 96, 23);
+}
+.general-footer__container__right-button p{
+    font-family: $base-font;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+@media (max-width: 710px) {
+    .general-footer__container__right{
+        display: inline;
+    }
+    .general-footer__container__right-button{
+        position:static;
+        margin-top: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: $base-color;
+        border: none;
+    }
+    .general-footer__container__title h2{
+        text-decoration: underline;
+        text-decoration-color: $base-color;
+    }
+}

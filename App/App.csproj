@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JavaScriptEngineSwitcher.Extensions.MsDependencyInjection" Version="3.24.1" />
+    <PackageReference Include="JavaScriptEngineSwitcher.Jint" Version="3.29.1" />
+    <PackageReference Include="JavaScriptEngineSwitcher.V8" Version="3.29.1" />
+    <PackageReference Include="LigerShark.WebOptimizer.Sass" Version="3.0.123" />
+    <PackageReference Include="Microsoft.ClearScript.V8" Version="7.5.0" />
+    <PackageReference Include="Microsoft.ClearScript.V8.Native.win-x64" Version="7.5.0" />
+  </ItemGroup>
+
+</Project>
