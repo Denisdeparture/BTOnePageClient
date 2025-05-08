@@ -1,6 +1,11 @@
 using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
 using JavaScriptEngineSwitcher.V8;
-
+using JavaScriptEngineSwitcher.Core;
+using WebOptimizer;
+using WebOptimizer.Sass;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 namespace App
 {
     public class Program
@@ -28,21 +33,15 @@ namespace App
             }
             app.UseWebOptimizer();
 
-            app.UseHttpsRedirection();
-
             app.UseStaticFiles();
 
             app.UseDefaultFiles();
 
             app.UseRouting();
 
-            app.UseAuthorization();
-
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}");
-
-         
             app.Run();
         }
     }
