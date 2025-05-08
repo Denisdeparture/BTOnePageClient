@@ -15,6 +15,7 @@ namespace App
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddControllersWithViews();
+
             builder.Services.AddJsEngineSwitcher(options =>
             {
                 options.AllowCurrentProperty = false;
