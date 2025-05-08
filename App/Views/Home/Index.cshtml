@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IndexViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -77,6 +78,9 @@
             <div class="general-footer__container__right">
                 <a href="https://wa.me/79774960775" class="general-footer__container__right-button"><p>+7 977 496 07 75</p></a>
             </div>
+        </div>
+        <div id="general-footer__info-url">
+            @Model.WebApiUrl
         </div>
     </footer>
 </body>

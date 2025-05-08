@@ -2,7 +2,8 @@ const chatInput = document.querySelector(".chatbot__chatinput textarea");
 const sendChatBtn = document.querySelector(".chatbot__chatinput i");
 const chatbox = document.querySelector(".chatbot__dialog-phrase-list");
 const chatToggler = document.querySelector(".chatbot-toggler");
-const apiurl = "https://localhost:7118/homeapiv1/sendmessage";
+const urlhost = document.getElementById("general-footer__info-url").innerHTML;
+const apiurl = "https://" + urlhost.trim() + "/homeapiv1/sendmessage";
 let userMessage;
 
 const  generateResponce = (incomingChatLi) => {
